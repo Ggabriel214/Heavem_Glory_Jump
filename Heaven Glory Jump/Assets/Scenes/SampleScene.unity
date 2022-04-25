@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1233,9 +1233,10 @@ GameObject:
   - component: {fileID: 75995805}
   - component: {fileID: 75995804}
   - component: {fileID: 75995803}
+  - component: {fileID: 75995806}
   m_Layer: 0
   m_Name: Death
-  m_TagString: Untagged
+  m_TagString: DeathTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1262,7 +1263,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 75995801}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -1317,6 +1318,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 75995801}
   m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
+--- !u!114 &75995806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75995801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be509a269ded25a4db981fa2a0b7c4a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeValue: 1
 --- !u!1 &76038396
 GameObject:
   m_ObjectHideFlags: 0
@@ -1617,9 +1631,10 @@ GameObject:
   - component: {fileID: 87396156}
   - component: {fileID: 87396155}
   - component: {fileID: 87396154}
+  - component: {fileID: 87396157}
   m_Layer: 0
   m_Name: Death
-  m_TagString: Untagged
+  m_TagString: DeathTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1646,7 +1661,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 87396152}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -1701,6 +1716,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 87396152}
   m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
+--- !u!114 &87396157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 87396152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be509a269ded25a4db981fa2a0b7c4a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeValue: 1
 --- !u!1 &96665598
 GameObject:
   m_ObjectHideFlags: 0
@@ -1756,9 +1784,10 @@ GameObject:
   - component: {fileID: 97052945}
   - component: {fileID: 97052944}
   - component: {fileID: 97052943}
+  - component: {fileID: 97052946}
   m_Layer: 0
   m_Name: Death
-  m_TagString: Untagged
+  m_TagString: DeathTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1785,7 +1814,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 97052941}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -1840,6 +1869,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 97052941}
   m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
+--- !u!114 &97052946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97052941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be509a269ded25a4db981fa2a0b7c4a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeValue: 1
 --- !u!1 &103321424
 GameObject:
   m_ObjectHideFlags: 0
@@ -2164,13 +2206,14 @@ GameObject:
   - component: {fileID: 115450309}
   - component: {fileID: 115450308}
   - component: {fileID: 115450307}
+  - component: {fileID: 115450310}
   m_Layer: 0
-  m_Name: Pie 5
-  m_TagString: Untagged
+  m_Name: ScoreTriggers
+  m_TagString: ScoreTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &115450306
 Transform:
   m_ObjectHideFlags: 0
@@ -2193,7 +2236,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115450305}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -2217,8 +2260,7 @@ MeshRenderer:
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: d246b46ed6462684c8141a86d55e20d4, type: 2}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2248,6 +2290,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115450305}
   m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
+--- !u!114 &115450310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115450305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c2ca6a2ad4785d4cb9974fdf98c9dc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 10
+  hasScored: 0
 --- !u!1 &122384118
 GameObject:
   m_ObjectHideFlags: 0
@@ -2921,9 +2977,10 @@ GameObject:
   - component: {fileID: 203742767}
   - component: {fileID: 203742766}
   - component: {fileID: 203742765}
+  - component: {fileID: 203742768}
   m_Layer: 0
   m_Name: Death
-  m_TagString: Untagged
+  m_TagString: DeathTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2950,7 +3007,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 203742763}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -3005,6 +3062,119 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 203742763}
   m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
+--- !u!114 &203742768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203742763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be509a269ded25a4db981fa2a0b7c4a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeValue: 1
+--- !u!1 &213143769
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 213143773}
+  - component: {fileID: 213143772}
+  - component: {fileID: 213143771}
+  - component: {fileID: 213143770}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &213143770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213143769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &213143771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213143769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &213143772
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213143769}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &213143773
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213143769}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 2023690570}
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &239979247
 GameObject:
   m_ObjectHideFlags: 0
@@ -3401,9 +3571,10 @@ GameObject:
   - component: {fileID: 260367664}
   - component: {fileID: 260367663}
   - component: {fileID: 260367662}
+  - component: {fileID: 260367665}
   m_Layer: 0
   m_Name: Death
-  m_TagString: Untagged
+  m_TagString: DeathTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3430,7 +3601,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 260367660}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -3485,6 +3656,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 260367660}
   m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
+--- !u!114 &260367665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260367660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be509a269ded25a4db981fa2a0b7c4a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeValue: 1
 --- !u!1 &264772455
 GameObject:
   m_ObjectHideFlags: 0
@@ -3593,9 +3777,10 @@ GameObject:
   - component: {fileID: 267267603}
   - component: {fileID: 267267602}
   - component: {fileID: 267267601}
+  - component: {fileID: 267267604}
   m_Layer: 0
   m_Name: Death
-  m_TagString: Untagged
+  m_TagString: DeathTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3622,7 +3807,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 267267599}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -3677,6 +3862,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 267267599}
   m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
+--- !u!114 &267267604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267267599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be509a269ded25a4db981fa2a0b7c4a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeValue: 1
 --- !u!1 &270883368
 GameObject:
   m_ObjectHideFlags: 0
@@ -4157,6 +4355,72 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 313438096}
   m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
+--- !u!1 &318150630
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 318150633}
+  - component: {fileID: 318150632}
+  - component: {fileID: 318150631}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &318150631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318150630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &318150632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318150630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &318150633
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318150630}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &318576706
 GameObject:
   m_ObjectHideFlags: 0
@@ -4649,9 +4913,10 @@ GameObject:
   - component: {fileID: 364186011}
   - component: {fileID: 364186010}
   - component: {fileID: 364186009}
+  - component: {fileID: 364186012}
   m_Layer: 0
   m_Name: Death
-  m_TagString: Untagged
+  m_TagString: DeathTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4678,7 +4943,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 364186007}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -4733,6 +4998,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 364186007}
   m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
+--- !u!114 &364186012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364186007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be509a269ded25a4db981fa2a0b7c4a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeValue: 1
 --- !u!1 &373976383
 GameObject:
   m_ObjectHideFlags: 0
@@ -5886,13 +6164,14 @@ GameObject:
   - component: {fileID: 556676758}
   - component: {fileID: 556676757}
   - component: {fileID: 556676756}
+  - component: {fileID: 556676759}
   m_Layer: 0
-  m_Name: Pie 10
-  m_TagString: Untagged
+  m_Name: ScoreTriggers
+  m_TagString: ScoreTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &556676755
 Transform:
   m_ObjectHideFlags: 0
@@ -5915,7 +6194,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 556676754}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -5939,8 +6218,7 @@ MeshRenderer:
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 2a1d763eca3a9064582c0516b4e737eb, type: 2}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5970,6 +6248,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 556676754}
   m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
+--- !u!114 &556676759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556676754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c2ca6a2ad4785d4cb9974fdf98c9dc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 10
+  hasScored: 0
 --- !u!1 &580552447
 GameObject:
   m_ObjectHideFlags: 0
@@ -6366,9 +6658,10 @@ GameObject:
   - component: {fileID: 599892282}
   - component: {fileID: 599892281}
   - component: {fileID: 599892280}
+  - component: {fileID: 599892283}
   m_Layer: 0
   m_Name: Death
-  m_TagString: Untagged
+  m_TagString: DeathTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6395,7 +6688,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 599892278}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -6450,6 +6743,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 599892278}
   m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
+--- !u!114 &599892283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 599892278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be509a269ded25a4db981fa2a0b7c4a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeValue: 1
 --- !u!1 &606563971
 GameObject:
   m_ObjectHideFlags: 0
@@ -6846,9 +7152,10 @@ GameObject:
   - component: {fileID: 649084549}
   - component: {fileID: 649084548}
   - component: {fileID: 649084547}
+  - component: {fileID: 649084550}
   m_Layer: 0
   m_Name: Death
-  m_TagString: Untagged
+  m_TagString: DeathTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6875,7 +7182,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 649084545}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -6930,6 +7237,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 649084545}
   m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
+--- !u!114 &649084550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649084545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be509a269ded25a4db981fa2a0b7c4a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeValue: 1
 --- !u!1 &654758233
 GameObject:
   m_ObjectHideFlags: 0
@@ -7369,13 +7689,14 @@ GameObject:
   - component: {fileID: 690637071}
   - component: {fileID: 690637070}
   - component: {fileID: 690637069}
+  - component: {fileID: 690637072}
   m_Layer: 0
-  m_Name: Pie 8
-  m_TagString: Untagged
+  m_Name: ScoreTriggers
+  m_TagString: ScoreTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &690637068
 Transform:
   m_ObjectHideFlags: 0
@@ -7398,7 +7719,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 690637067}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -7422,8 +7743,7 @@ MeshRenderer:
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: d246b46ed6462684c8141a86d55e20d4, type: 2}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7453,6 +7773,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 690637067}
   m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
+--- !u!114 &690637072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690637067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c2ca6a2ad4785d4cb9974fdf98c9dc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 10
+  hasScored: 0
 --- !u!1 &692956636
 GameObject:
   m_ObjectHideFlags: 0
@@ -7561,9 +7895,10 @@ GameObject:
   - component: {fileID: 700549032}
   - component: {fileID: 700549031}
   - component: {fileID: 700549030}
+  - component: {fileID: 700549033}
   m_Layer: 0
   m_Name: Death
-  m_TagString: Untagged
+  m_TagString: DeathTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7590,7 +7925,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 700549028}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -7645,6 +7980,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 700549028}
   m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
+--- !u!114 &700549033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700549028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be509a269ded25a4db981fa2a0b7c4a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeValue: 1
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -7846,9 +8194,10 @@ GameObject:
   - component: {fileID: 735523584}
   - component: {fileID: 735523583}
   - component: {fileID: 735523582}
+  - component: {fileID: 735523585}
   m_Layer: 0
   m_Name: Death
-  m_TagString: Untagged
+  m_TagString: DeathTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7875,7 +8224,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 735523580}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -7930,6 +8279,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 735523580}
   m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
+--- !u!114 &735523585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735523580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be509a269ded25a4db981fa2a0b7c4a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeValue: 1
 --- !u!1 &741147196
 GameObject:
   m_ObjectHideFlags: 0
@@ -8945,9 +9307,10 @@ GameObject:
   - component: {fileID: 883312857}
   - component: {fileID: 883312856}
   - component: {fileID: 883312855}
+  - component: {fileID: 883312858}
   m_Layer: 0
   m_Name: Death
-  m_TagString: Untagged
+  m_TagString: DeathTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8974,7 +9337,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 883312853}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -9029,6 +9392,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 883312853}
   m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
+--- !u!114 &883312858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883312853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be509a269ded25a4db981fa2a0b7c4a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeValue: 1
 --- !u!1 &883729584
 GameObject:
   m_ObjectHideFlags: 0
@@ -9521,9 +9897,10 @@ GameObject:
   - component: {fileID: 922338801}
   - component: {fileID: 922338800}
   - component: {fileID: 922338799}
+  - component: {fileID: 922338802}
   m_Layer: 0
   m_Name: Death
-  m_TagString: Untagged
+  m_TagString: DeathTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9550,7 +9927,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 922338797}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -9605,6 +9982,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 922338797}
   m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
+--- !u!114 &922338802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922338797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be509a269ded25a4db981fa2a0b7c4a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeValue: 1
 --- !u!1 &927588999
 GameObject:
   m_ObjectHideFlags: 0
@@ -10707,13 +11097,14 @@ GameObject:
   - component: {fileID: 1125563600}
   - component: {fileID: 1125563599}
   - component: {fileID: 1125563598}
+  - component: {fileID: 1125563601}
   m_Layer: 0
-  m_Name: Pie 6
-  m_TagString: Untagged
+  m_Name: ScoreTriggers
+  m_TagString: ScoreTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1125563597
 Transform:
   m_ObjectHideFlags: 0
@@ -10736,7 +11127,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1125563596}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -10760,8 +11151,7 @@ MeshRenderer:
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: d246b46ed6462684c8141a86d55e20d4, type: 2}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10791,6 +11181,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1125563596}
   m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
+--- !u!114 &1125563601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125563596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c2ca6a2ad4785d4cb9974fdf98c9dc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 10
+  hasScored: 0
 --- !u!1 &1126650318
 GameObject:
   m_ObjectHideFlags: 0
@@ -11383,7 +11787,7 @@ GameObject:
   - component: {fileID: 1202239997}
   m_Layer: 0
   m_Name: Ball
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11492,6 +11896,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fbe2f374b27633419f3f0c0a20d2060, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lifeValue: {fileID: 11400000, guid: 3f2d129bd1866c34cbed8178bdac06ab, type: 2}
   rb: {fileID: 1202239996}
   jumpForce: 530
 --- !u!1 &1205789329
@@ -11506,9 +11911,10 @@ GameObject:
   - component: {fileID: 1205789333}
   - component: {fileID: 1205789332}
   - component: {fileID: 1205789331}
+  - component: {fileID: 1205789334}
   m_Layer: 0
   m_Name: Death
-  m_TagString: Untagged
+  m_TagString: DeathTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11535,7 +11941,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1205789329}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -11590,6 +11996,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1205789329}
   m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
+--- !u!114 &1205789334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205789329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be509a269ded25a4db981fa2a0b7c4a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeValue: 1
 --- !u!1 &1211412695
 GameObject:
   m_ObjectHideFlags: 0
@@ -11794,13 +12213,14 @@ GameObject:
   - component: {fileID: 1256319737}
   - component: {fileID: 1256319736}
   - component: {fileID: 1256319735}
+  - component: {fileID: 1256319738}
   m_Layer: 0
-  m_Name: Pie 2
-  m_TagString: Untagged
+  m_Name: ScoreTriggers
+  m_TagString: ScoreTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1256319734
 Transform:
   m_ObjectHideFlags: 0
@@ -11823,7 +12243,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1256319733}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -11847,8 +12267,7 @@ MeshRenderer:
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: d246b46ed6462684c8141a86d55e20d4, type: 2}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11878,6 +12297,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1256319733}
   m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
+--- !u!114 &1256319738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256319733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c2ca6a2ad4785d4cb9974fdf98c9dc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 10
+  hasScored: 0
 --- !u!1 &1264285445
 GameObject:
   m_ObjectHideFlags: 0
@@ -12167,13 +12600,14 @@ GameObject:
   - component: {fileID: 1327497657}
   - component: {fileID: 1327497656}
   - component: {fileID: 1327497655}
+  - component: {fileID: 1327497658}
   m_Layer: 0
-  m_Name: Pie 4
-  m_TagString: Untagged
+  m_Name: ScoreTriggers
+  m_TagString: ScoreTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1327497654
 Transform:
   m_ObjectHideFlags: 0
@@ -12196,7 +12630,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1327497653}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -12220,8 +12654,7 @@ MeshRenderer:
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: d246b46ed6462684c8141a86d55e20d4, type: 2}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12251,6 +12684,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1327497653}
   m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
+--- !u!114 &1327497658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327497653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c2ca6a2ad4785d4cb9974fdf98c9dc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 10
+  hasScored: 0
 --- !u!1 &1329773775
 GameObject:
   m_ObjectHideFlags: 0
@@ -12455,9 +12902,10 @@ GameObject:
   - component: {fileID: 1348432599}
   - component: {fileID: 1348432598}
   - component: {fileID: 1348432597}
+  - component: {fileID: 1348432600}
   m_Layer: 0
   m_Name: Death
-  m_TagString: Untagged
+  m_TagString: DeathTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12484,7 +12932,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1348432595}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -12539,6 +12987,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1348432595}
   m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
+--- !u!114 &1348432600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348432595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be509a269ded25a4db981fa2a0b7c4a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeValue: 1
 --- !u!1 &1352387158
 GameObject:
   m_ObjectHideFlags: 0
@@ -12839,9 +13300,10 @@ GameObject:
   - component: {fileID: 1390130741}
   - component: {fileID: 1390130740}
   - component: {fileID: 1390130739}
+  - component: {fileID: 1390130742}
   m_Layer: 0
   m_Name: Death
-  m_TagString: Untagged
+  m_TagString: DeathTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12868,7 +13330,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1390130737}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -12923,6 +13385,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1390130737}
   m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
+--- !u!114 &1390130742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390130737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be509a269ded25a4db981fa2a0b7c4a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeValue: 1
 --- !u!1 &1393467165
 GameObject:
   m_ObjectHideFlags: 0
@@ -14939,9 +15414,10 @@ GameObject:
   - component: {fileID: 1554416188}
   - component: {fileID: 1554416187}
   - component: {fileID: 1554416186}
+  - component: {fileID: 1554416189}
   m_Layer: 0
   m_Name: Death
-  m_TagString: Untagged
+  m_TagString: DeathTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14968,7 +15444,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1554416184}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -15023,6 +15499,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1554416184}
   m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
+--- !u!114 &1554416189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554416184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be509a269ded25a4db981fa2a0b7c4a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeValue: 1
 --- !u!1 &1582578924
 GameObject:
   m_ObjectHideFlags: 0
@@ -15323,13 +15812,14 @@ GameObject:
   - component: {fileID: 1609556072}
   - component: {fileID: 1609556071}
   - component: {fileID: 1609556070}
+  - component: {fileID: 1609556073}
   m_Layer: 0
-  m_Name: Pie 9
-  m_TagString: Untagged
+  m_Name: ScoreTriggers
+  m_TagString: ScoreTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1609556069
 Transform:
   m_ObjectHideFlags: 0
@@ -15352,7 +15842,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1609556068}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -15376,8 +15866,7 @@ MeshRenderer:
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: d246b46ed6462684c8141a86d55e20d4, type: 2}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15407,6 +15896,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1609556068}
   m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
+--- !u!114 &1609556073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609556068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c2ca6a2ad4785d4cb9974fdf98c9dc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 10
+  hasScored: 0
 --- !u!1 &1615085507
 GameObject:
   m_ObjectHideFlags: 0
@@ -16943,9 +17446,10 @@ GameObject:
   - component: {fileID: 1761139894}
   - component: {fileID: 1761139893}
   - component: {fileID: 1761139892}
+  - component: {fileID: 1761139895}
   m_Layer: 0
   m_Name: Death
-  m_TagString: Untagged
+  m_TagString: DeathTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16972,7 +17476,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1761139890}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -17027,6 +17531,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1761139890}
   m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
+--- !u!114 &1761139895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761139890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be509a269ded25a4db981fa2a0b7c4a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeValue: 1
 --- !u!1 &1781228549
 GameObject:
   m_ObjectHideFlags: 0
@@ -17135,13 +17652,14 @@ GameObject:
   - component: {fileID: 1783565413}
   - component: {fileID: 1783565412}
   - component: {fileID: 1783565411}
+  - component: {fileID: 1783565414}
   m_Layer: 0
-  m_Name: Pie 7
-  m_TagString: Untagged
+  m_Name: ScoreTriggers
+  m_TagString: ScoreTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1783565410
 Transform:
   m_ObjectHideFlags: 0
@@ -17164,7 +17682,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1783565409}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -17188,8 +17706,7 @@ MeshRenderer:
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: d246b46ed6462684c8141a86d55e20d4, type: 2}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17219,6 +17736,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1783565409}
   m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
+--- !u!114 &1783565414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783565409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c2ca6a2ad4785d4cb9974fdf98c9dc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 10
+  hasScored: 0
 --- !u!1 &1790938395
 GameObject:
   m_ObjectHideFlags: 0
@@ -17753,13 +18284,14 @@ GameObject:
   - component: {fileID: 1867191918}
   - component: {fileID: 1867191917}
   - component: {fileID: 1867191916}
+  - component: {fileID: 1867191919}
   m_Layer: 0
-  m_Name: Pie 1
-  m_TagString: Untagged
+  m_Name: ScoreTriggers
+  m_TagString: ScoreTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1867191915
 Transform:
   m_ObjectHideFlags: 0
@@ -17782,7 +18314,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1867191914}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -17806,8 +18338,7 @@ MeshRenderer:
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: d246b46ed6462684c8141a86d55e20d4, type: 2}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17837,6 +18368,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1867191914}
   m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
+--- !u!114 &1867191919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867191914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c2ca6a2ad4785d4cb9974fdf98c9dc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 10
+  hasScored: 0
 --- !u!1 &1874682351
 GameObject:
   m_ObjectHideFlags: 0
@@ -18713,9 +19258,10 @@ GameObject:
   - component: {fileID: 1938938483}
   - component: {fileID: 1938938482}
   - component: {fileID: 1938938481}
+  - component: {fileID: 1938938484}
   m_Layer: 0
   m_Name: Death
-  m_TagString: Untagged
+  m_TagString: DeathTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18742,7 +19288,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1938938479}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -18797,6 +19343,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1938938479}
   m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
+--- !u!114 &1938938484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938938479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be509a269ded25a4db981fa2a0b7c4a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeValue: 1
 --- !u!1 &1944470214
 GameObject:
   m_ObjectHideFlags: 0
@@ -19289,9 +19848,10 @@ GameObject:
   - component: {fileID: 1974552153}
   - component: {fileID: 1974552152}
   - component: {fileID: 1974552151}
+  - component: {fileID: 1974552154}
   m_Layer: 0
   m_Name: Death
-  m_TagString: Untagged
+  m_TagString: DeathTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19318,7 +19878,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1974552149}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -19373,6 +19933,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1974552149}
   m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
+--- !u!114 &1974552154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974552149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be509a269ded25a4db981fa2a0b7c4a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeValue: 1
 --- !u!1 &1978287210
 GameObject:
   m_ObjectHideFlags: 0
@@ -19812,9 +20385,10 @@ GameObject:
   - component: {fileID: 2001448634}
   - component: {fileID: 2001448633}
   - component: {fileID: 2001448632}
+  - component: {fileID: 2001448635}
   m_Layer: 0
   m_Name: Death
-  m_TagString: Untagged
+  m_TagString: DeathTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19841,7 +20415,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2001448630}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -19896,6 +20470,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2001448630}
   m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
+--- !u!114 &2001448635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001448630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be509a269ded25a4db981fa2a0b7c4a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeValue: 1
 --- !u!1 &2001553905
 GameObject:
   m_ObjectHideFlags: 0
@@ -20568,6 +21155,155 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2011429425}
   m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
+--- !u!1 &2023690569
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2023690570}
+  - component: {fileID: 2023690573}
+  - component: {fileID: 2023690572}
+  - component: {fileID: 2023690571}
+  m_Layer: 5
+  m_Name: Score
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2023690570
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023690569}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 213143773}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 940}
+  m_SizeDelta: {x: 1920, y: 371.1835}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2023690571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023690569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c53618d3bbcb4d49bb8e4b58a8a2d36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: {fileID: 11400000, guid: f6b65e7b603271e4f8efac858332bb0b, type: 2}
+  scoreText: {fileID: 2023690572}
+--- !u!114 &2023690572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023690569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 0000
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4293335043
+  m_fontColor: {r: 0.011961505, g: 0.09529448, b: 0.9056604, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 200
+  m_fontSizeBase: 200
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &2023690573
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023690569}
+  m_CullTransparentMesh: 1
 --- !u!1 &2041507297
 GameObject:
   m_ObjectHideFlags: 0
@@ -21348,9 +22084,10 @@ GameObject:
   - component: {fileID: 2081264320}
   - component: {fileID: 2081264319}
   - component: {fileID: 2081264318}
+  - component: {fileID: 2081264321}
   m_Layer: 0
   m_Name: Death
-  m_TagString: Untagged
+  m_TagString: DeathTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21377,7 +22114,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2081264316}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -21432,6 +22169,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2081264316}
   m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
+--- !u!114 &2081264321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081264316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be509a269ded25a4db981fa2a0b7c4a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeValue: 1
 --- !u!1 &2083007542
 GameObject:
   m_ObjectHideFlags: 0
@@ -21828,9 +22578,10 @@ GameObject:
   - component: {fileID: 2117479379}
   - component: {fileID: 2117479378}
   - component: {fileID: 2117479377}
+  - component: {fileID: 2117479380}
   m_Layer: 0
   m_Name: Death
-  m_TagString: Untagged
+  m_TagString: DeathTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21857,7 +22608,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2117479375}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -21912,6 +22663,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2117479375}
   m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
+--- !u!114 &2117479380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117479375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be509a269ded25a4db981fa2a0b7c4a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeValue: 1
 --- !u!1 &2117936706
 GameObject:
   m_ObjectHideFlags: 0
