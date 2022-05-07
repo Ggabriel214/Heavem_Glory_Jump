@@ -4,16 +4,35 @@ using UnityEngine;
 
 public class Rotate_Cylinder : MonoBehaviour
 {
-    public float rotateSpeed;
-    private float moveX;
+    private Vector2 lastTapPos;
+    private Vector3 startRotation;
 
+    // Start is called before the first frame update
+    void Awake()
+    {
+        startRotation = transform.localEulerAngles;
+    }
+
+    // Update is called once per frame
     void Update()
     {
-        moveX = Input.GetAxis("Mouse X");
-
         if (Input.GetMouseButton(0))
         {
-            transform.Rotate(0f, moveX * rotateSpeed * Time.deltaTime, 0f);
+            Vector2 curTapPos = Input.mousePosition;
+
+            if (lastTapPos == Vector2.zero)
+            {
+                lastTapPos = curTapPos;
+            }
+
+            float delta = lastTapPos.x - curTapPos.x;
+            lastTapPos = curTapPos;
+
+            transform.Rotate(Vector3.up * delta);
+        }
+        if (Input.GetMouseButtonUp(0))
+        {
+            lastTapPos = Vector2.zero;
         }
     }
 }

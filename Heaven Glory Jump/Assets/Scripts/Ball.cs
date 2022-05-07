@@ -8,32 +8,47 @@ public class Ball : MonoBehaviour
 
     [SerializeField] private FloatValue lifeValue;
 
+    private bool ignoreNextCollision;
     public Rigidbody rb;
-    public float jumpForce;
+    public float ImpulsForce = 10.3f;
 
     private void Awake()
     {
         instance = this;
     }
 
+    // Start is called before the first frame update
     void Start()
     {
-        
+
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (ignoreNextCollision)
+            return;
+
+        Debug.Log("Ball touched the floor");
+
+        rb.velocity = Vector3.zero;
+        rb.AddForce(Vector3.up * ImpulsForce, ForceMode.Impulse);
+
+        ignoreNextCollision = true;
+        Invoke("AllowCollision", .2f);
+    }
+
+    private void AllowCollision()
+    {
+        ignoreNextCollision = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        rb.AddForce(Vector3.up * jumpForce);
 
     }
 
-    public void CheckHealth(float damageTaken) 
+    public void CheckHealth(float damageTaken)
     {
         lifeValue.runtimeValue -= damageTaken;
     }
