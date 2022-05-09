@@ -28,8 +28,6 @@ public class Ball : MonoBehaviour
         if (ignoreNextCollision)
             return;
 
-        Debug.Log("Ball touched the floor");
-
         rb.velocity = Vector3.zero;
         rb.AddForce(Vector3.up * ImpulsForce, ForceMode.Impulse);
 
