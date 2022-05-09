@@ -16,23 +16,31 @@ public class Rotate_Cylinder : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Ball.instance.playerState == PlayerState.playing)
         {
-            Vector2 curTapPos = Input.mousePosition;
-
-            if (lastTapPos == Vector2.zero)
+            if (Input.GetMouseButton(0))
             {
+                Vector2 curTapPos = Input.mousePosition;
+
+                if (lastTapPos == Vector2.zero)
+                {
+                    lastTapPos = curTapPos;
+                }
+
+                float delta = lastTapPos.x - curTapPos.x;
                 lastTapPos = curTapPos;
+
+                transform.Rotate(Vector3.up * delta);
             }
-
-            float delta = lastTapPos.x - curTapPos.x;
-            lastTapPos = curTapPos;
-
-            transform.Rotate(Vector3.up * delta);
+            if (Input.GetMouseButtonUp(0))
+            {
+                lastTapPos = Vector2.zero;
+            }
         }
-        if (Input.GetMouseButtonUp(0))
+
+        if (Ball.instance.playerState == PlayerState.idle || Ball.instance.playerState == PlayerState.death) 
         {
-            lastTapPos = Vector2.zero;
+
         }
     }
 }

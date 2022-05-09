@@ -2,20 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum PlayerState 
+{
+    idle,
+    playing,
+    death
+}
+
 public class Ball : MonoBehaviour
 {
     public static Ball instance;
 
+    public PlayerState playerState;
     [SerializeField] private FloatValue lifeValue;
+    [SerializeField] private Rigidbody rb;
 
     private bool ignoreNextCollision;
-    public Rigidbody rb;
-    public float ImpulsForce = 10.3f;
+    [SerializeField] private float ImpulsForce = 10.3f;
     private Vector3 startPos;
 
     private void Awake()
     {
         instance = this;
+        playerState = PlayerState.idle;
+        
     }
 
     // Start is called before the first frame update
@@ -26,6 +36,7 @@ public class Ball : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        
         if (ignoreNextCollision)
             return;
 
@@ -40,6 +51,7 @@ public class Ball : MonoBehaviour
 
         ignoreNextCollision = true;
         Invoke("AllowCollision", .2f);
+                
     }
 
     private void AllowCollision()
