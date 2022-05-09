@@ -31,4 +31,9 @@ public class ScoreManager : MonoBehaviour
         scoreValue.runtimeValue += addPoints;
         scoreText.text = scoreValue.runtimeValue.ToString() + " ";
     }
+    public void RestartLevel()
+    {
+        Debug.Log("Game Over");
+        FindObjectOfType<Ball>().ResetBall();
+    }
 }

@@ -11,6 +11,7 @@ public class Ball : MonoBehaviour
     private bool ignoreNextCollision;
     public Rigidbody rb;
     public float ImpulsForce = 10.3f;
+    private Vector3 startPos;
 
     private void Awake()
     {
@@ -20,13 +21,19 @@ public class Ball : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        startPos = transform.position;
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         if (ignoreNextCollision)
             return;
+
+        DeathTrigger deathTrigger = collision.transform.GetComponent<DeathTrigger>();
+        if (deathTrigger)
+            deathTrigger.HitDeathTrigger();
+
+        //Debug.Log("Ball touched the floor");
 
         rb.velocity = Vector3.zero;
         rb.AddForce(Vector3.up * ImpulsForce, ForceMode.Impulse);
@@ -40,10 +47,9 @@ public class Ball : MonoBehaviour
         ignoreNextCollision = false;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ResetBall()
     {
-
+        transform.position = startPos;
     }
 
     public void CheckHealth(float damageTaken)
