@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1234,6 +1234,7 @@ GameObject:
   - component: {fileID: 75995804}
   - component: {fileID: 75995803}
   - component: {fileID: 75995806}
+  - component: {fileID: 75995807}
   m_Layer: 0
   m_Name: Death
   m_TagString: DeathTrigger
@@ -1331,6 +1332,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeValue: 1
+--- !u!64 &75995807
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75995801}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
 --- !u!1 &76038396
 GameObject:
   m_ObjectHideFlags: 0
@@ -1632,6 +1647,7 @@ GameObject:
   - component: {fileID: 87396155}
   - component: {fileID: 87396154}
   - component: {fileID: 87396157}
+  - component: {fileID: 87396158}
   m_Layer: 0
   m_Name: Death
   m_TagString: DeathTrigger
@@ -1729,6 +1745,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeValue: 1
+--- !u!64 &87396158
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 87396152}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
 --- !u!1 &96665598
 GameObject:
   m_ObjectHideFlags: 0
@@ -1785,6 +1815,7 @@ GameObject:
   - component: {fileID: 97052944}
   - component: {fileID: 97052943}
   - component: {fileID: 97052946}
+  - component: {fileID: 97052947}
   m_Layer: 0
   m_Name: Death
   m_TagString: DeathTrigger
@@ -1882,6 +1913,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeValue: 1
+--- !u!64 &97052947
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97052941}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
 --- !u!1 &103321424
 GameObject:
   m_ObjectHideFlags: 0
@@ -2977,6 +3022,7 @@ GameObject:
   - component: {fileID: 203742766}
   - component: {fileID: 203742765}
   - component: {fileID: 203742768}
+  - component: {fileID: 203742769}
   m_Layer: 0
   m_Name: Death
   m_TagString: DeathTrigger
@@ -3074,6 +3120,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeValue: 1
+--- !u!64 &203742769
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203742763}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
 --- !u!1 &213143769
 GameObject:
   m_ObjectHideFlags: 0
@@ -3571,6 +3631,7 @@ GameObject:
   - component: {fileID: 260367663}
   - component: {fileID: 260367662}
   - component: {fileID: 260367665}
+  - component: {fileID: 260367666}
   m_Layer: 0
   m_Name: Death
   m_TagString: DeathTrigger
@@ -3668,6 +3729,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeValue: 1
+--- !u!64 &260367666
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260367660}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
 --- !u!1 &264772455
 GameObject:
   m_ObjectHideFlags: 0
@@ -3777,6 +3852,7 @@ GameObject:
   - component: {fileID: 267267602}
   - component: {fileID: 267267601}
   - component: {fileID: 267267604}
+  - component: {fileID: 267267605}
   m_Layer: 0
   m_Name: Death
   m_TagString: DeathTrigger
@@ -3874,6 +3950,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeValue: 1
+--- !u!64 &267267605
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267267599}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
 --- !u!1 &270883368
 GameObject:
   m_ObjectHideFlags: 0
@@ -6658,6 +6748,7 @@ GameObject:
   - component: {fileID: 599892281}
   - component: {fileID: 599892280}
   - component: {fileID: 599892283}
+  - component: {fileID: 599892284}
   m_Layer: 0
   m_Name: Death
   m_TagString: DeathTrigger
@@ -6755,6 +6846,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeValue: 1
+--- !u!64 &599892284
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 599892278}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
 --- !u!1 &606563971
 GameObject:
   m_ObjectHideFlags: 0
@@ -7152,6 +7257,7 @@ GameObject:
   - component: {fileID: 649084548}
   - component: {fileID: 649084547}
   - component: {fileID: 649084550}
+  - component: {fileID: 649084551}
   m_Layer: 0
   m_Name: Death
   m_TagString: DeathTrigger
@@ -7249,6 +7355,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeValue: 1
+--- !u!64 &649084551
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649084545}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
 --- !u!1 &654758233
 GameObject:
   m_ObjectHideFlags: 0
@@ -7895,6 +8015,7 @@ GameObject:
   - component: {fileID: 700549031}
   - component: {fileID: 700549030}
   - component: {fileID: 700549033}
+  - component: {fileID: 700549034}
   m_Layer: 0
   m_Name: Death
   m_TagString: DeathTrigger
@@ -7992,6 +8113,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeValue: 1
+--- !u!64 &700549034
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700549028}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -8194,6 +8329,7 @@ GameObject:
   - component: {fileID: 735523583}
   - component: {fileID: 735523582}
   - component: {fileID: 735523585}
+  - component: {fileID: 735523586}
   m_Layer: 0
   m_Name: Death
   m_TagString: DeathTrigger
@@ -8291,6 +8427,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeValue: 1
+--- !u!64 &735523586
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735523580}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
 --- !u!1 &741147196
 GameObject:
   m_ObjectHideFlags: 0
@@ -9307,6 +9457,7 @@ GameObject:
   - component: {fileID: 883312856}
   - component: {fileID: 883312855}
   - component: {fileID: 883312858}
+  - component: {fileID: 883312859}
   m_Layer: 0
   m_Name: Death
   m_TagString: DeathTrigger
@@ -9404,6 +9555,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeValue: 1
+--- !u!64 &883312859
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883312853}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
 --- !u!1 &883729584
 GameObject:
   m_ObjectHideFlags: 0
@@ -9897,6 +10062,7 @@ GameObject:
   - component: {fileID: 922338800}
   - component: {fileID: 922338799}
   - component: {fileID: 922338802}
+  - component: {fileID: 922338803}
   m_Layer: 0
   m_Name: Death
   m_TagString: DeathTrigger
@@ -9994,6 +10160,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeValue: 1
+--- !u!64 &922338803
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922338797}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
 --- !u!1 &927588999
 GameObject:
   m_ObjectHideFlags: 0
@@ -11910,6 +12090,7 @@ GameObject:
   - component: {fileID: 1205789332}
   - component: {fileID: 1205789331}
   - component: {fileID: 1205789334}
+  - component: {fileID: 1205789335}
   m_Layer: 0
   m_Name: Death
   m_TagString: DeathTrigger
@@ -12007,6 +12188,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeValue: 1
+--- !u!64 &1205789335
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205789329}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
 --- !u!1 &1211412695
 GameObject:
   m_ObjectHideFlags: 0
@@ -12901,6 +13096,7 @@ GameObject:
   - component: {fileID: 1348432598}
   - component: {fileID: 1348432597}
   - component: {fileID: 1348432600}
+  - component: {fileID: 1348432601}
   m_Layer: 0
   m_Name: Death
   m_TagString: DeathTrigger
@@ -12998,6 +13194,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeValue: 1
+--- !u!64 &1348432601
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348432595}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
 --- !u!1 &1352387158
 GameObject:
   m_ObjectHideFlags: 0
@@ -13299,6 +13509,7 @@ GameObject:
   - component: {fileID: 1390130740}
   - component: {fileID: 1390130739}
   - component: {fileID: 1390130742}
+  - component: {fileID: 1390130743}
   m_Layer: 0
   m_Name: Death
   m_TagString: DeathTrigger
@@ -13396,6 +13607,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeValue: 1
+--- !u!64 &1390130743
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390130737}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
 --- !u!1 &1393467165
 GameObject:
   m_ObjectHideFlags: 0
@@ -15413,6 +15638,7 @@ GameObject:
   - component: {fileID: 1554416187}
   - component: {fileID: 1554416186}
   - component: {fileID: 1554416189}
+  - component: {fileID: 1554416190}
   m_Layer: 0
   m_Name: Death
   m_TagString: DeathTrigger
@@ -15510,6 +15736,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeValue: 1
+--- !u!64 &1554416190
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554416184}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
 --- !u!1 &1582578924
 GameObject:
   m_ObjectHideFlags: 0
@@ -17445,6 +17685,7 @@ GameObject:
   - component: {fileID: 1761139893}
   - component: {fileID: 1761139892}
   - component: {fileID: 1761139895}
+  - component: {fileID: 1761139896}
   m_Layer: 0
   m_Name: Death
   m_TagString: DeathTrigger
@@ -17542,6 +17783,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeValue: 1
+--- !u!64 &1761139896
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761139890}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
 --- !u!1 &1781228549
 GameObject:
   m_ObjectHideFlags: 0
@@ -19257,6 +19512,7 @@ GameObject:
   - component: {fileID: 1938938482}
   - component: {fileID: 1938938481}
   - component: {fileID: 1938938484}
+  - component: {fileID: 1938938485}
   m_Layer: 0
   m_Name: Death
   m_TagString: DeathTrigger
@@ -19354,6 +19610,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeValue: 1
+--- !u!64 &1938938485
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938938479}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
 --- !u!1 &1944470214
 GameObject:
   m_ObjectHideFlags: 0
@@ -19847,6 +20117,7 @@ GameObject:
   - component: {fileID: 1974552152}
   - component: {fileID: 1974552151}
   - component: {fileID: 1974552154}
+  - component: {fileID: 1974552155}
   m_Layer: 0
   m_Name: Death
   m_TagString: DeathTrigger
@@ -19944,6 +20215,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeValue: 1
+--- !u!64 &1974552155
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974552149}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
 --- !u!1 &1978287210
 GameObject:
   m_ObjectHideFlags: 0
@@ -20384,6 +20669,7 @@ GameObject:
   - component: {fileID: 2001448633}
   - component: {fileID: 2001448632}
   - component: {fileID: 2001448635}
+  - component: {fileID: 2001448636}
   m_Layer: 0
   m_Name: Death
   m_TagString: DeathTrigger
@@ -20481,6 +20767,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeValue: 1
+--- !u!64 &2001448636
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001448630}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
 --- !u!1 &2001553905
 GameObject:
   m_ObjectHideFlags: 0
@@ -22083,6 +22383,7 @@ GameObject:
   - component: {fileID: 2081264319}
   - component: {fileID: 2081264318}
   - component: {fileID: 2081264321}
+  - component: {fileID: 2081264322}
   m_Layer: 0
   m_Name: Death
   m_TagString: DeathTrigger
@@ -22180,6 +22481,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeValue: 1
+--- !u!64 &2081264322
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081264316}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
 --- !u!1 &2083007542
 GameObject:
   m_ObjectHideFlags: 0
@@ -22577,6 +22892,7 @@ GameObject:
   - component: {fileID: 2117479378}
   - component: {fileID: 2117479377}
   - component: {fileID: 2117479380}
+  - component: {fileID: 2117479381}
   m_Layer: 0
   m_Name: Death
   m_TagString: DeathTrigger
@@ -22674,6 +22990,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeValue: 1
+--- !u!64 &2117479381
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117479375}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6150326042995890324, guid: dda4a39bdd7dee0439e411cbc8efdbfc, type: 3}
 --- !u!1 &2117936706
 GameObject:
   m_ObjectHideFlags: 0
