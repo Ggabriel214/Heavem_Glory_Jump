@@ -40,7 +40,7 @@ public class Rotate_Cylinder : MonoBehaviour
 
         if (Ball.instance.playerState == PlayerState.idle || Ball.instance.playerState == PlayerState.death) 
         {
-
+            return;
         }
     }
 }

@@ -26,7 +26,7 @@ public class QuizChallenge : MonoBehaviour
     void Start()
     {
         timer = FindObjectOfType<TimerChallenge>();
-        WriteAnswers();
+        GetQuestion();
     }
 
     void Update()
@@ -51,6 +51,12 @@ public class QuizChallenge : MonoBehaviour
     {
         questionText.text = questionObject.GetQuestion();
 
+        for (int i = 0; i < answerObjects.Length; i++)
+        {
+            TextMeshProUGUI buttonText = answerObjects[i].GetComponentInChildren<TextMeshProUGUI>();
+            buttonText.text = questionObject.GetAnswer(i);
+        }
+
     }
 
     private void GetQuestion()
@@ -74,15 +80,6 @@ public class QuizChallenge : MonoBehaviour
             questionObjects.Remove(questionObject);
         }
 
-    }
-
-    private void WriteAnswers()
-    {
-        for (int i = 0; i < answerObjects.Length; i++)
-        {
-            TextMeshProUGUI buttonText = answerObjects[i].GetComponentInChildren<TextMeshProUGUI>();
-            buttonText.text = questionObject.GetAnswer(i);
-        }
     }
 
     private void SetButtonState(bool state)

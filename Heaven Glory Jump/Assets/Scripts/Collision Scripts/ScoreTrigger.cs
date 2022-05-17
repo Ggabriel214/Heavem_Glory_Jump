@@ -12,25 +12,9 @@ public class ScoreTrigger : MonoBehaviour
         hasScored = false;
     }
 
-    /*private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player")) 
-        {
-            if (hasScored == false)
-            {
-                ScoreManager.instance.AddPoints(scoreValue);
-                hasScored = true;
-            }
-            else if (hasScored == true) 
-            {
-                return;
-            }
-        }
-    }*/
-
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player")) 
+        if (other.CompareTag("Player") && Ball.instance.playerState == PlayerState.playing) 
         {
             if (hasScored == false)
             {

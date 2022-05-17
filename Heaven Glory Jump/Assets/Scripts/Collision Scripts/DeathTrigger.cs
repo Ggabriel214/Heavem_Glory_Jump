@@ -13,8 +13,9 @@ public class DeathTrigger : MonoBehaviour
             Ball.instance.CheckHealth(lifeValue);
         }
     }
-    public void HitDeathTrigger()
+
+    /*public void HitDeathTrigger()
     {
         ScoreManager.instance.RestartLevel();
-    }
+    }*/
 }

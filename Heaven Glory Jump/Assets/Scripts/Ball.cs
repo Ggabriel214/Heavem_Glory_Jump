@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum PlayerState 
 {
@@ -18,8 +19,10 @@ public class Ball : MonoBehaviour
     [SerializeField] private Rigidbody rb;
 
     private bool ignoreNextCollision;
-    [SerializeField] private float ImpulsForce = 10.3f;
-    private Vector3 startPos;
+    [SerializeField] private float defaultImpulseForce;
+    [SerializeField] private float currentImpulseForce;
+    [SerializeField] private float deathImpulseForce;
+    [SerializeField] private VectorValue startPos;
 
     private void Awake()
     {
@@ -31,7 +34,8 @@ public class Ball : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        startPos = transform.position;
+        startPos.defaultValue = transform.position;
+        currentImpulseForce = defaultImpulseForce;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -40,14 +44,8 @@ public class Ball : MonoBehaviour
         if (ignoreNextCollision)
             return;
 
-        DeathTrigger deathTrigger = collision.transform.GetComponent<DeathTrigger>();
-        if (deathTrigger)
-            deathTrigger.HitDeathTrigger();
-
-        //Debug.Log("Ball touched the floor");
-
         rb.velocity = Vector3.zero;
-        rb.AddForce(Vector3.up * ImpulsForce, ForceMode.Impulse);
+        rb.AddForce(Vector3.up * currentImpulseForce, ForceMode.Impulse);
 
         ignoreNextCollision = true;
         Invoke("AllowCollision", .2f);
@@ -59,13 +57,31 @@ public class Ball : MonoBehaviour
         ignoreNextCollision = false;
     }
 
-    public void ResetBall()
+    private void ChangeImpulseForce() 
     {
-        transform.position = startPos;
+        currentImpulseForce = defaultImpulseForce;
+    }
+
+    private void ResetBall()
+    {
+        transform.position = startPos.defaultValue;
+        currentImpulseForce = deathImpulseForce;
+        Invoke("ChangeImpulseForce", 2f);
     }
 
     public void CheckHealth(float damageTaken)
     {
         lifeValue.runtimeValue -= damageTaken;
+
+        if (lifeValue.runtimeValue == 0)
+        {
+            ManagerGame.instance.CheckDeathState();
+            playerState = PlayerState.death;
+        }
+
+        else 
+        {
+            ResetBall();
+        }
     }
 }
