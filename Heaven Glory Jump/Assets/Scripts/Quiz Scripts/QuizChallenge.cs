@@ -22,10 +22,23 @@ public class QuizChallenge : MonoBehaviour
     [SerializeField] private Image timerImage;
     private TimerChallenge timer;
 
+    [Header("Score Manager")]
+    [SerializeField] private TextMeshProUGUI scoreText;
+    private QuizScoreRecorder scoreRecorder;
+    private int answersCount;
+
+    public bool isComplete;
+
+    private void Awake()
+    {
+        timer = FindObjectOfType<TimerChallenge>();
+        scoreRecorder = FindObjectOfType<QuizScoreRecorder>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        timer = FindObjectOfType<TimerChallenge>();
+        answersCount = 0;
         GetQuestion();
     }
 
@@ -35,6 +48,13 @@ public class QuizChallenge : MonoBehaviour
 
         if (timer.loadNextQuestion)
         {
+            if (questionObjects.Count < 0 || answersCount == 3) 
+            {
+                ManagerGame.instance.ReviveGame();
+                isComplete = true;
+                return;
+            }
+
             isAnsweredEarly = false;
             GetQuestion();
             timer.loadNextQuestion = false;
@@ -63,9 +83,11 @@ public class QuizChallenge : MonoBehaviour
     {
         if (questionObjects.Count > 0)
         {
+            SetButtonState(true);
             SetButtonSprites();
             GetRandomQuestion();
             WriteQuestions();
+            scoreRecorder.IncrementQuestionSeen();
         }
 
     }
@@ -106,6 +128,7 @@ public class QuizChallenge : MonoBehaviour
         DisplayAnswer(index);
         SetButtonState(false);
         timer.CancelTimer();
+        scoreText.text = "Score: " + scoreRecorder.CalculateScore() + "%";
     }
 
     private void DisplayAnswer(int index)
@@ -117,6 +140,8 @@ public class QuizChallenge : MonoBehaviour
             questionText.text = "Correct!";
             buttonImage = answerObjects[index].GetComponent<Image>();
             buttonImage.sprite = correctAnswerSprite;
+            scoreRecorder.IncrementCorrectAnswers();
+            answersCount++;
         }
 
         else

@@ -13,9 +13,12 @@ public class ManagerGame : MonoBehaviour
     [SerializeField] private GameObject quizCanvasObject;
     [SerializeField] private SaveManager saveManager;
 
+    public bool canRevive;
+
     private void Awake()
     {
         instance = this;
+        canRevive = false;
     }
 
     public void ChangePlayStates() 
@@ -41,5 +44,11 @@ public class ManagerGame : MonoBehaviour
     {
         SceneManager.LoadScene("MainScene");
         deathChoiceCanvasObject.SetActive(false);
+    }
+
+    public void ReviveGame() 
+    {
+        quizCanvasObject.SetActive(false);
+        canRevive = true;
     }
 }

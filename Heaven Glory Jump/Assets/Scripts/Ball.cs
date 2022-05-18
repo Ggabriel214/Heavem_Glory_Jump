@@ -38,6 +38,11 @@ public class Ball : MonoBehaviour
         currentImpulseForce = defaultImpulseForce;
     }
 
+    private void Update()
+    {
+        CheckRevive();
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         
@@ -79,9 +84,21 @@ public class Ball : MonoBehaviour
             playerState = PlayerState.death;
         }
 
-        else 
+        else
         {
             ResetBall();
         }
     }
+
+    private void CheckRevive() 
+    {
+        if (ManagerGame.instance.canRevive == true)
+        {
+            lifeValue.runtimeValue = lifeValue.initialValue;
+            playerState = PlayerState.playing;
+            ResetBall();
+            ManagerGame.instance.canRevive = false;
+        }
+    }
+
 }
