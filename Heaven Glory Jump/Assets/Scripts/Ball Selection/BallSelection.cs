@@ -5,6 +5,8 @@ public class BallSelection : MonoBehaviour
 {
     [SerializeField] private Button previousButton;
     [SerializeField] private Button nextButton;
+    [SerializeField] private Button selectButton;
+    [SerializeField] private IntValue skinIndexValue;
     private int currentCar;
 
     private void Awake()
@@ -27,5 +29,10 @@ public class BallSelection : MonoBehaviour
     {
         currentCar += _change;
         SelectBall(currentCar);
+    }
+
+    public void SelectSkin() 
+    {
+        skinIndexValue.runtimeValue = currentCar;
     }
 }

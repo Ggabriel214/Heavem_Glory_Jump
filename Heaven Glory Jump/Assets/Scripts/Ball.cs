@@ -14,15 +14,26 @@ public class Ball : MonoBehaviour
 {
     public static Ball instance;
 
+    [Header("Player States")]
     public PlayerState playerState;
-    [SerializeField] private FloatValue lifeValue;
-    [SerializeField] private Rigidbody rb;
 
-    private bool ignoreNextCollision;
+    [Header("Life Settings")]
+    [SerializeField] private FloatValue lifeValue;
+
+    [Header("Rigidbody Physics Settings")]
+    [SerializeField] private Rigidbody rb;
     [SerializeField] private float defaultImpulseForce;
     [SerializeField] private float currentImpulseForce;
     [SerializeField] private float deathImpulseForce;
+    private bool ignoreNextCollision;
+    
+    [Header("Position Settings")]
     [SerializeField] private VectorValue startPos;
+
+    [Header("Skin Settings")]
+    [SerializeField] private MeshRenderer currentRenderer;
+    [SerializeField] private Material[] skinList;
+    [SerializeField] private IntValue skinIndexValue;
 
     private void Awake()
     {
@@ -36,11 +47,17 @@ public class Ball : MonoBehaviour
     {
         startPos.defaultValue = transform.position;
         currentImpulseForce = defaultImpulseForce;
+        ChooseSkin();
     }
 
     private void Update()
     {
         CheckRevive();
+    }
+
+    private void ChooseSkin() 
+    {
+        currentRenderer.material = skinList[skinIndexValue.runtimeValue];
     }
 
     private void OnCollisionEnter(Collision collision)
