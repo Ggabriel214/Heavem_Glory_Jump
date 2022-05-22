@@ -51,4 +51,14 @@ public class ManagerGame : MonoBehaviour
         quizCanvasObject.SetActive(false);
         canRevive = true;
     }
+
+    public void EnableSettings() 
+    {
+        SceneManager.LoadScene("Ball Selection");
+    }
+
+    public void DisableSettings() 
+    {
+        SceneManager.LoadScene("MainScene");
+    }
 }

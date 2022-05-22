@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class BallSelection : MonoBehaviour
 {
@@ -34,5 +35,10 @@ public class BallSelection : MonoBehaviour
     public void SelectSkin() 
     {
         skinIndexValue.runtimeValue = currentCar;
+    }
+
+    public void GoToMain() 
+    {
+        SceneManager.LoadScene("MainScene");
     }
 }
