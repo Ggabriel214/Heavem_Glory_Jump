@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0736ef90b165c3542b819ad1f28149ba, type: 3}
   m_Name: PlayerLife
   m_EditorClassIdentifier: 
-  initialValue: 0
-  runtimeValue: 0
+  initialValue: 3
+  runtimeValue: 2
