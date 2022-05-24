@@ -6,15 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainScene.unity
+    path: Assets/Scenes/Level 1.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/Ball Selection.unity
     guid: fb86ed35dd0ed6246b3e96f13b3d874c
-  - enabled: 1
-    path: Assets/Scenes/Level 2.unity
-    guid: ee18fbd9e06975e4e9e35c290d3cc023
-  - enabled: 1
-    path: Assets/Scenes/Level 3.unity
-    guid: 04af6c5b45f52f54a9699b586e3c8a0e
   m_configObjects: {}
