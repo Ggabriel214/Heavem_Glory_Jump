@@ -133,7 +133,20 @@ MonoBehaviour:
   deathImpulseForce: 8
   startPos: {fileID: 11400000, guid: feb096d0b2fd8204bb43f6fa604346ec, type: 2}
   currentRenderer: {fileID: 6384017355599056705}
+  currentMeshFilter: {fileID: 6384017355599056706}
+  meshList:
+  - {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 8375326970612795661, guid: 85561cf3e58247b43844e9732ef85167, type: 3}
+  - {fileID: -1736622283181914040, guid: cac9f8c4ff4733a4cb659d8b2bde24e0, type: 3}
+  - {fileID: -1736622283181914040, guid: ecfb409e43139b947bb3a6a8b08099a7, type: 3}
+  - {fileID: 8375326970612795661, guid: 9e477bbb1814f8f48ae0b34978c79af7, type: 3}
+  - {fileID: -5495902117074765545, guid: 175db5ef817a345458acf4dc4a7c8568, type: 3}
+  - {fileID: 8375326970612795661, guid: e31664c82136a9544a08fdd682b7006a, type: 3}
+  - {fileID: 8375326970612795661, guid: 4eacd94523e2cc84fbcf54d1287215d2, type: 3}
+  - {fileID: 8375326970612795661, guid: bc94eed5b79deee41be5f5f08c671299, type: 3}
+  - {fileID: -1736622283181914040, guid: 140d30a32afd9194e9b54e38c5061f0b, type: 3}
   skinList:
+  - {fileID: 2100000, guid: a6b998e2cee93784dad4c458dfba5a8d, type: 2}
   - {fileID: 2100000, guid: 189fddb7c7762b14ca9efb239c4e0da9, type: 2}
   - {fileID: 2100000, guid: 8251f8866e95eb44b9212ae5f78a4fde, type: 2}
   - {fileID: 2100000, guid: e55f3d1e48c67c848942effc9cadc5c7, type: 2}

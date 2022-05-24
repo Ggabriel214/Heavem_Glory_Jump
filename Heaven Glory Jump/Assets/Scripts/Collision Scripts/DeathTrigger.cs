@@ -10,6 +10,7 @@ public class DeathTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player")) 
         {
+            DeathEffect.instace.EnableDeathEffect();
             Ball.instance.CheckHealth(lifeValue);
         }
     }

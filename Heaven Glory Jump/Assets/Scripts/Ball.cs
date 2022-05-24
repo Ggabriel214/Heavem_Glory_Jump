@@ -32,6 +32,8 @@ public class Ball : MonoBehaviour
 
     [Header("Skin Settings")]
     [SerializeField] private MeshRenderer currentRenderer;
+    [SerializeField] private MeshFilter currentMeshFilter;
+    [SerializeField] private Mesh[] meshList;
     [SerializeField] private Material[] skinList;
     [SerializeField] private IntValue skinIndexValue;
 
@@ -57,6 +59,7 @@ public class Ball : MonoBehaviour
 
     private void ChooseSkin() 
     {
+        currentMeshFilter.mesh = meshList[skinIndexValue.runtimeValue];
         currentRenderer.material = skinList[skinIndexValue.runtimeValue];
     }
 
