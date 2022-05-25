@@ -42,7 +42,7 @@ public class ManagerGame : MonoBehaviour
 
     public void ResetGame() 
     {
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("Level 1");
         deathChoiceCanvasObject.SetActive(false);
     }
 
@@ -59,6 +59,6 @@ public class ManagerGame : MonoBehaviour
 
     public void DisableSettings() 
     {
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("Level 1");
     }
 }

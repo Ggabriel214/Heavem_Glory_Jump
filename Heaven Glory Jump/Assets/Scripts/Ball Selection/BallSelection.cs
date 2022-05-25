@@ -39,6 +39,6 @@ public class BallSelection : MonoBehaviour
 
     public void GoToMain() 
     {
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("Level 1");
     }
 }
