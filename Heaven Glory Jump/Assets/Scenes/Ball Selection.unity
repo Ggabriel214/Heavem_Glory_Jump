@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.45138705, g: 0.5009124, b: 0.5724889, a: 1}
+  m_IndirectSpecularColor: {r: 0.45138747, g: 0.50091255, b: 0.57248944, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1680,6 +1680,7 @@ MonoBehaviour:
   nextButton: {fileID: 680622523}
   selectButton: {fileID: 1216379487}
   skinIndexValue: {fileID: 11400000, guid: f3082b627852abd42ae907b733a8f7df, type: 2}
+  levelIndexValue: {fileID: 11400000, guid: 794e21ebfc609704986358a8fb409ec0, type: 2}
 --- !u!1 &1003724061
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,6 +8,7 @@ public class BallSelection : MonoBehaviour
     [SerializeField] private Button nextButton;
     [SerializeField] private Button selectButton;
     [SerializeField] private IntValue skinIndexValue;
+    [SerializeField] private IntValue levelIndexValue;
     private int currentCar;
 
     private void Awake()
@@ -39,6 +40,6 @@ public class BallSelection : MonoBehaviour
 
     public void GoToMain() 
     {
-        SceneManager.LoadScene("Level 1");
+        SceneManager.LoadScene(levelIndexValue.runtimeValue);
     }
 }

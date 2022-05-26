@@ -32,20 +32,20 @@ public class HighscoreList : MonoBehaviour
         if (highscores == null)
         {
             Debug.Log("Initializing table with default values...");
-            AddHighscoreEntry(53800, "JAH");
-            AddHighscoreEntry(47600, "TW");
-            AddHighscoreEntry(40400, "RBJ");
-            AddHighscoreEntry(38200, "JAH");
-            AddHighscoreEntry(37400, "TW");
-            AddHighscoreEntry(36900, "RBJ");
-            AddHighscoreEntry(34800, "BGB");
-            AddHighscoreEntry(34100, "LRD");
-            AddHighscoreEntry(33900, "PRG");
-            AddHighscoreEntry(33700, "ROY");
-            AddHighscoreEntry(31800, "DEL");
-            AddHighscoreEntry(31600, "DOG");
-            AddHighscoreEntry(31100, "AYN");
-            AddHighscoreEntry(30800, "EDY");
+            AddHighscoreEntry(2000, "JAH");
+            AddHighscoreEntry(1500, "TW");
+            AddHighscoreEntry(1200, "RBJ");
+            AddHighscoreEntry(1000, "JAH");
+            AddHighscoreEntry(920, "TW");
+            AddHighscoreEntry(870, "RBJ");
+            AddHighscoreEntry(510, "BGB");
+            AddHighscoreEntry(330, "LRD");
+            AddHighscoreEntry(220, "PRG");
+            AddHighscoreEntry(200, "ROY");
+            AddHighscoreEntry(170, "DEL");
+            AddHighscoreEntry(150, "DOG");
+            AddHighscoreEntry(130, "AYN");
+            AddHighscoreEntry(100, "EDY");
 
             AddHighscoreEntry(playerScore.runtimeValue, playerName);
 
@@ -75,7 +75,7 @@ public class HighscoreList : MonoBehaviour
 
                     if (highscores.highscoreEntryList.Count > 10)
                     {
-                        highscores.highscoreEntryList.RemoveRange(3, highscores.highscoreEntryList.Count - 3);
+                        highscores.highscoreEntryList.RemoveRange(9, highscores.highscoreEntryList.Count - 9);
                     }
                 }
             }

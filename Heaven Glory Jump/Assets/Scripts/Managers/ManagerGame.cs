@@ -10,20 +10,23 @@ public class ManagerGame : MonoBehaviour
     [SerializeField] private GameObject startCanvasObject;
     [SerializeField] private GameObject scoreCanvasObject;
     [SerializeField] private GameObject deathChoiceCanvasObject;
+    [SerializeField] private GameObject inputNameObject;
     [SerializeField] private GameObject quizCanvasObject;
+    [SerializeField] private IntValue levelIndexValue;
     [SerializeField] private SaveManager saveManager;
 
     public bool canRevive;
 
     private void Awake()
     {
+        levelIndexValue.runtimeValue = SceneManager.GetActiveScene().buildIndex;
         instance = this;
         canRevive = false;
     }
 
     public void ChangePlayStates() 
     {
-        saveManager.ResetScriptables();
+        
         startCanvasObject.SetActive(false);
         scoreCanvasObject.SetActive(true);
         Ball.instance.playerState = PlayerState.playing;
@@ -60,5 +63,16 @@ public class ManagerGame : MonoBehaviour
     public void DisableSettings() 
     {
         SceneManager.LoadScene("Level 1");
+    }
+
+    public void EnableInputArea() 
+    {
+        deathChoiceCanvasObject.SetActive(false);
+        inputNameObject.SetActive(true);
+    }
+
+    public void GoToHighScore() 
+    {
+        SceneManager.LoadScene("HighscoreList");
     }
 }

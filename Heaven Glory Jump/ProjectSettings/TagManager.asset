@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ScoreTrigger
   - DeathTrigger
+  - LevelTrigger
   layers:
   - Default
   - TransparentFX

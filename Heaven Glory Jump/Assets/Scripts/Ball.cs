@@ -74,7 +74,12 @@ public class Ball : MonoBehaviour
 
         ignoreNextCollision = true;
         Invoke("AllowCollision", .2f);
-                
+
+        if (collision.collider.CompareTag("LevelTrigger")) 
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+
     }
 
     private void AllowCollision()

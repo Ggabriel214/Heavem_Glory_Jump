@@ -47,6 +47,7 @@ MonoBehaviour:
   scoreCanvasObject: {fileID: 0}
   deathChoiceCanvasObject: {fileID: 0}
   quizCanvasObject: {fileID: 0}
+  levelIndexValue: {fileID: 11400000, guid: 794e21ebfc609704986358a8fb409ec0, type: 2}
   saveManager: {fileID: 2656600850572256787}
   canRevive: 0
 --- !u!1 &2656600849016122238
