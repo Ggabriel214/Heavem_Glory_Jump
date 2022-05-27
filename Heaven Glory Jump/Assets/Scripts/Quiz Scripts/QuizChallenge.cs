@@ -48,7 +48,7 @@ public class QuizChallenge : MonoBehaviour
 
         if (timer.loadNextQuestion)
         {
-            if (questionObjects.Count < 0 || answersCount == 3) 
+            if (questionObjects.Count < 0 || answersCount == 1) 
             {
                 ManagerGame.instance.ReviveGame();
                 isComplete = true;

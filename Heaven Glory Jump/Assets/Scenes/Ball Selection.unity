@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.45138747, g: 0.50091255, b: 0.57248944, a: 1}
+  m_IndirectSpecularColor: {r: 0.45138705, g: 0.5009124, b: 0.5724889, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1053,7 +1053,7 @@ GameObject:
   - component: {fileID: 680622521}
   - component: {fileID: 680622523}
   m_Layer: 5
-  m_Name: NextCar
+  m_Name: NextBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1161,8 +1161,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 967521938}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: ChangeCar
+        m_TargetAssemblyTypeName: BallSelection, Assembly-CSharp
+        m_MethodName: ChangeBall
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2270,7 +2270,7 @@ GameObject:
   - component: {fileID: 1699160346}
   - component: {fileID: 1699160345}
   m_Layer: 5
-  m_Name: PreviousCar
+  m_Name: PreviousBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2340,8 +2340,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 967521938}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: ChangeCar
+        m_TargetAssemblyTypeName: BallSelection, Assembly-CSharp
+        m_MethodName: ChangeBall
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

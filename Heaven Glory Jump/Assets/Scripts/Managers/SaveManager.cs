@@ -13,6 +13,7 @@ public class SaveManager : MonoBehaviour
 
     public void ResetScriptables()
     {
+        PlayerPrefs.DeleteAll();
         for (int i = 0; i < objects.Count; i++)
         {
             if (File.Exists(Application.persistentDataPath + string.Format("/{0}.dat", i)))

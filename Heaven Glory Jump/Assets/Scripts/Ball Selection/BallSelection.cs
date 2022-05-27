@@ -9,7 +9,7 @@ public class BallSelection : MonoBehaviour
     [SerializeField] private Button selectButton;
     [SerializeField] private IntValue skinIndexValue;
     [SerializeField] private IntValue levelIndexValue;
-    private int currentCar;
+    private int currentBall;
 
     private void Awake()
     {
@@ -27,15 +27,15 @@ public class BallSelection : MonoBehaviour
         }
     }
 
-    public void ChangeCar(int _change)
+    public void ChangeBall(int _change)
     {
-        currentCar += _change;
-        SelectBall(currentCar);
+        currentBall += _change;
+        SelectBall(currentBall);
     }
 
     public void SelectSkin() 
     {
-        skinIndexValue.runtimeValue = currentCar;
+        skinIndexValue.runtimeValue = currentBall;
     }
 
     public void GoToMain() 
