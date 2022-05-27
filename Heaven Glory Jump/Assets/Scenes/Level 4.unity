@@ -554,6 +554,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2656600848822790453, guid: 108975b0d984ea64d993989341b528d6, type: 3}
+      propertyPath: inputNameObject
+      value: 
+      objectReference: {fileID: 5215782728289878406}
+    - target: {fileID: 2656600848822790453, guid: 108975b0d984ea64d993989341b528d6, type: 3}
       propertyPath: quizCanvasObject
       value: 
       objectReference: {fileID: 1263107960}
@@ -831,6 +835,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1231842000}
+    - target: {fileID: 5215782728046246991, guid: c53d9b0295656184682acbcb54da239b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EnableInputArea
+      objectReference: {fileID: 0}
     - target: {fileID: 5215782728554545078, guid: c53d9b0295656184682acbcb54da239b, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -889,6 +897,11 @@ PrefabInstance:
       objectReference: {fileID: 1231842000}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c53d9b0295656184682acbcb54da239b, type: 3}
+--- !u!1 &5215782728289878406 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 79796376770865443, guid: c53d9b0295656184682acbcb54da239b, type: 3}
+  m_PrefabInstance: {fileID: 5215782728289878405}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5443777794609596231
 PrefabInstance:
   m_ObjectHideFlags: 0

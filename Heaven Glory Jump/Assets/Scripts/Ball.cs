@@ -37,6 +37,8 @@ public class Ball : MonoBehaviour
     [SerializeField] private Material[] skinList;
     [SerializeField] private IntValue skinIndexValue;
 
+    [SerializeField] private BoolValue isStarting;
+
     private void Awake()
     {
         instance = this;
@@ -77,7 +79,9 @@ public class Ball : MonoBehaviour
 
         if (collision.collider.CompareTag("LevelTrigger")) 
         {
+            isStarting.runtimeValue = false;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            
         }
 
     }

@@ -14,7 +14,7 @@ public class ManagerGame : MonoBehaviour
     [SerializeField] private GameObject quizCanvasObject;
     [SerializeField] private IntValue levelIndexValue;
     [SerializeField] private SaveManager saveManager;
-
+    [SerializeField] private BoolValue isStarting;
     public bool canRevive;
 
     private void Awake()
@@ -26,7 +26,11 @@ public class ManagerGame : MonoBehaviour
 
     public void ChangePlayStates() 
     {
-        
+        if (isStarting.runtimeValue == true) 
+        {
+            saveManager.ResetScriptables();
+        }
+
         startCanvasObject.SetActive(false);
         scoreCanvasObject.SetActive(true);
         Ball.instance.playerState = PlayerState.playing;
