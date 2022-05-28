@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -774,11 +774,35 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3257424218747459253, guid: bb694d26f7b7a694283e12ff3cb10d3b, type: 3}
+      propertyPath: m_fontSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257424218747459253, guid: bb694d26f7b7a694283e12ff3cb10d3b, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257424219315175205, guid: bb694d26f7b7a694283e12ff3cb10d3b, type: 3}
+      propertyPath: m_fontSize
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257424219315175205, guid: bb694d26f7b7a694283e12ff3cb10d3b, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257424219315175211, guid: bb694d26f7b7a694283e12ff3cb10d3b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3257424220081231657, guid: bb694d26f7b7a694283e12ff3cb10d3b, type: 3}
       propertyPath: timeToShowAnswer
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3257424220081231663, guid: bb694d26f7b7a694283e12ff3cb10d3b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257424220136504228, guid: bb694d26f7b7a694283e12ff3cb10d3b, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
